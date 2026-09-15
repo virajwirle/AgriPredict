@@ -1,0 +1,36 @@
+# Datasets
+data/
+dataset/
+datasets/
+*.zip
+*.rar
+*.7z
+
+# Model weights / checkpoints
+checkpoints/
+models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+.cache/
