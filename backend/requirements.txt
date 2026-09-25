@@ -1,0 +1,17 @@
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pydantic-settings==2.15.0
+python-multipart
+huggingface-hub
+numpy
+Pillow
+opencv-python-headless
+httpx
+orjson
+pytest
+pytest-asyncio
+httpx
+sqlalchemy
+alembic
+psycopg[binary]
+supabase

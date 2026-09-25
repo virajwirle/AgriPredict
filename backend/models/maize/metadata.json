@@ -1,0 +1,16 @@
+{
+  "model_id": "maize_disease_v1",
+  "crop": "maize",
+  "display_name": "Maize Leaf Disease Detection",
+  "version": "1.0.0",
+  "framework": "pytorch",
+  "adapter": "maize_v1",
+  "source": {
+    "repo_id": "viraj1920/plant-disease-models",
+    "path_in_repo": "maize/v1",
+    "revision": "main",
+    "private": true
+  },
+  "enabled": true,
+  "preload": false
+}

@@ -1,0 +1,200 @@
+
+[
+  {
+    "crop": "maize",
+    "class_code": "Healthy",
+    "class_name": "Healthy Maize Leaf",
+    "condition_type": "healthy",
+    "overview": "The image resembles healthy maize-leaf examples supported by the model, with no supported disease class strongly indicated.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine scouting",
+      "Maintain locally appropriate crop nutrition, irrigation and weed management",
+      "Re-scan if lesions, streaks, mottling or rapid discoloration appear"
+    ],
+    "management": [
+      "No disease-specific treatment is suggested from this result"
+    ],
+    "professional_help_message": "Seek local advice if whole-plant symptoms are present but not visible in the uploaded leaf image.",
+    "sources": [
+      {
+        "title": "Corn pest management",
+        "organization": "University of Minnesota Extension",
+        "url": "https://extension.umn.edu/corn/corn-pest-management"
+      }
+    ]
+  },
+  {
+    "crop": "maize",
+    "class_code": "MLN",
+    "class_name": "Maize Lethal Necrosis",
+    "condition_type": "viral",
+    "overview": "Maize lethal necrosis is a serious disease caused by simultaneous infection involving maize chlorotic mottle virus and another compatible cereal virus.",
+    "symptoms": [
+      "Chlorotic mottling that may progress to leaf necrosis",
+      "Stunting",
+      "Abnormal tassels",
+      "Poor ear formation",
+      "Premature plant death"
+    ],
+    "possible_causes": [
+      "Combined viral infection, commonly maize chlorotic mottle virus with sugarcane mosaic virus or another compatible potyvirus"
+    ],
+    "favorable_conditions": [
+      "Presence of infected plants",
+      "Susceptible maize varieties",
+      "Presence of insect vectors",
+      "Continuous maize production can sustain disease pressure"
+    ],
+    "spread": [
+      "Insect vectors can transmit the component viruses",
+      "Movement of infected or contaminated seed and plant material can contribute to spread"
+    ],
+    "prevention": [
+      "Use certified disease-free seed",
+      "Use tolerant or resistant varieties recommended locally",
+      "Control volunteer maize and relevant weed hosts",
+      "Follow local planting-time and vector-management guidance"
+    ],
+    "management": [
+      "Report suspected outbreaks to local agricultural authorities where MLN is regulated or emerging",
+      "Remove severely affected plants only according to local phytosanitary guidance",
+      "Do not rely on fungicides because MLN is viral"
+    ],
+    "professional_help_message": "Request field confirmation from an agricultural extension or plant-health authority when MLN is suspected.",
+    "sources": [
+      {
+        "title": "Maize Lethal Necrosis and its management",
+        "organization": "CIMMYT / ICAR",
+        "url": "https://mln.cimmyt.org/wp-content/uploads/sites/39/2025/10/MAIZE-LETHAL-NECROSIS-MLN-AND-MANAGEMENT.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "maize",
+    "class_code": "MSV",
+    "class_name": "Maize Streak Virus Disease",
+    "condition_type": "viral",
+    "overview": "Maize streak disease is a viral disease transmitted primarily by leafhopper vectors.",
+    "symptoms": [
+      "Narrow pale or yellow streaks running parallel to leaf veins",
+      "Severe early infection may cause stunting",
+      "Severe infection can contribute to poor yield"
+    ],
+    "possible_causes": [
+      "Maize streak virus"
+    ],
+    "favorable_conditions": [
+      "High activity of viruliferous leafhopper vectors",
+      "Susceptible maize varieties",
+      "Nearby cereal or grass hosts"
+    ],
+    "spread": [
+      "Transmitted by leafhoppers after feeding on infected plants",
+      "The virus is not controlled by fungicides"
+    ],
+    "prevention": [
+      "Use resistant or tolerant varieties recommended locally",
+      "Plant at locally recommended times",
+      "Manage volunteer cereals and relevant grass hosts",
+      "Use locally approved vector-management practices when justified"
+    ],
+    "management": [
+      "Confirm the disease because nutrient disorders and other viruses may also cause streaking",
+      "Seek local advice on integrated vector and crop management"
+    ],
+    "professional_help_message": "Request extension confirmation, especially when streaking and stunting occur across multiple plants.",
+    "sources": [
+      {
+        "title": "Maize streak virus",
+        "organization": "Plantwise Knowledge Bank",
+        "url": "https://plantwiseplusknowledgebank.org/"
+      }
+    ]
+  },
+  {
+    "crop": "maize",
+    "class_code": "NLB",
+    "class_name": "Northern Leaf Blight",
+    "condition_type": "fungal",
+    "overview": "Northern leaf blight is a fungal maize disease that can reduce yield when susceptible crops are infected early and disease becomes severe.",
+    "symptoms": [
+      "Long canoe-shaped lesions that become tan",
+      "Lesions often begin on lower leaves and may spread upward"
+    ],
+    "possible_causes": [
+      "Exserohilum turcicum"
+    ],
+    "favorable_conditions": [
+      "Moderate temperatures",
+      "Prolonged leaf moisture",
+      "Dew or humid weather",
+      "Infected maize residue"
+    ],
+    "spread": [
+      "Spores develop on infected tissue and can move by wind",
+      "The pathogen can survive in maize debris"
+    ],
+    "prevention": [
+      "Use resistant hybrids",
+      "Rotate away from maize where appropriate",
+      "Manage infected residue using locally suitable practices"
+    ],
+    "management": [
+      "Scout fields and consider crop stage, hybrid susceptibility and weather",
+      "Use fungicides only when locally recommended and economically justified"
+    ],
+    "professional_help_message": "Seek agronomic advice if lesions reach upper leaves before or around flowering.",
+    "sources": [
+      {
+        "title": "Northern corn leaf blight",
+        "organization": "University of Minnesota Extension",
+        "url": "https://extension.umn.edu/agriculture/crop-production/corn/northern-corn-leaf-blight"
+      }
+    ]
+  },
+  {
+    "crop": "maize",
+    "class_code": "NLS",
+    "class_name": "Northern Leaf Spot",
+    "condition_type": "fungal",
+    "overview": "Northern leaf spot is a fungal maize disease whose appearance can vary with pathogen race and maize genotype.",
+    "symptoms": [
+      "Grayish-tan, narrow or oblong lesions with darker borders",
+      "Lesions may occur on leaves, sheaths or husks"
+    ],
+    "possible_causes": [
+      "Bipolaris zeicola"
+    ],
+    "favorable_conditions": [
+      "Moderate temperatures",
+      "Humid weather",
+      "Minimal tillage",
+      "Infected maize residue"
+    ],
+    "spread": [
+      "The pathogen survives in residue",
+      "The pathogen produces spores under favorable conditions"
+    ],
+    "prevention": [
+      "Use resistant hybrids",
+      "Rotate crops where appropriate",
+      "Manage infected maize debris using locally suitable practices"
+    ],
+    "management": [
+      "Confirm the disease because symptoms can resemble other maize leaf diseases",
+      "Consider fungicide only under local professional guidance, particularly for susceptible seed-production lines"
+    ],
+    "professional_help_message": "Consult an agronomist if disease is widespread or the crop is a susceptible seed-production line.",
+    "sources": [
+      {
+        "title": "Northern corn leaf spot",
+        "organization": "University of Minnesota Extension",
+        "url": "https://extension.umn.edu/agriculture/crop-production/corn/northern-corn-leaf-spot"
+      }
+    ]
+  }
+]

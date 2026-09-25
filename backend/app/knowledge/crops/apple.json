@@ -1,0 +1,315 @@
+
+[
+  {
+    "crop": "apple",
+    "class_code": "ALTERNARIA_LEAF_SPOT",
+    "class_name": "Apple Alternaria Leaf Spot",
+    "condition_type": "fungal",
+    "overview": "A fungal leaf-spot condition associated with Alternaria species. Visual confirmation alone may not distinguish it from other apple leaf spots.",
+    "symptoms": [
+      "Brown to dark leaf spots, sometimes with a purple border",
+      "Spots may enlarge and contribute to premature leaf drop"
+    ],
+    "possible_causes": [
+      "Alternaria species associated with apple leaf spot diseases"
+    ],
+    "favorable_conditions": [
+      "Warm, humid or wet conditions",
+      "Susceptible cultivars",
+      "Infected plant debris"
+    ],
+    "spread": [
+      "Fungal spores may move by wind",
+      "Rain splash can contribute to movement of spores"
+    ],
+    "prevention": [
+      "Use locally recommended resistant or less-susceptible cultivars",
+      "Remove or manage infected debris where practical",
+      "Maintain canopy airflow",
+      "Avoid unnecessary prolonged leaf wetness"
+    ],
+    "management": [
+      "Confirm the disease with local horticulture or plant-pathology guidance",
+      "Follow local orchard disease-management recommendations",
+      "Use only locally registered fungicides according to their labels"
+    ],
+    "professional_help_message": "Seek local advice if spotting is spreading rapidly or substantial defoliation is occurring.",
+    "sources": [
+      {
+        "title": "Apple Disease Control Toolbox - Fungicide Timing",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/apple-disease-control-toolbox-fungicide-timing"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "BROWN_SPOT",
+    "class_name": "Apple Brown Spot",
+    "condition_type": "fungal",
+    "overview": "A broad visual category for brown leaf-spot symptoms. Several pathogens and non-infectious problems can produce similar symptoms, so the model result should be confirmed before treatment.",
+    "symptoms": [
+      "Brown or dark necrotic spots on leaves",
+      "Spots may merge",
+      "Affected leaves may yellow or fall"
+    ],
+    "possible_causes": [
+      "One of several fungal leaf-spot diseases",
+      "Non-infectious injury can sometimes produce similar discoloration"
+    ],
+    "favorable_conditions": [
+      "Frequent rain",
+      "High humidity",
+      "Extended leaf wetness"
+    ],
+    "spread": [
+      "If fungal, spores may spread through rain splash",
+      "Wind can contribute to spore movement",
+      "Infected plant debris can serve as a source of inoculum"
+    ],
+    "prevention": [
+      "Improve canopy airflow",
+      "Manage fallen or infected plant material",
+      "Avoid unnecessary overhead irrigation"
+    ],
+    "management": [
+      "Obtain local confirmation before selecting a treatment",
+      "Use only locally registered products according to their labels"
+    ],
+    "professional_help_message": "Consult an orchard specialist because brown-spot appearance alone does not establish the causal disease.",
+    "sources": [
+      {
+        "title": "Managing Orchards: Protecting Tree Health",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/managing-orchards-in-a-no-crop-year-protecting-tree-health-for-next-season"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "FROGEYE_LEAF_SPOT",
+    "class_name": "Apple Frogeye Leaf Spot",
+    "condition_type": "fungal",
+    "overview": "Frogeye leaf spot is associated with the same disease complex that causes black rot on apple.",
+    "symptoms": [
+      "Small circular spots with light centers",
+      "Spots may have darker purple or brown margins",
+      "Multiple spots may occur on a leaf"
+    ],
+    "possible_causes": [
+      "Diplodia seriata, historically reported as Botryosphaeria obtusa"
+    ],
+    "favorable_conditions": [
+      "Warm, wet weather",
+      "Nearby dead wood",
+      "Cankers or mummified fruit that can support inoculum"
+    ],
+    "spread": [
+      "Spores can spread from infected tissue during wet weather"
+    ],
+    "prevention": [
+      "Remove dead wood and mummified fruit",
+      "Prune affected material using good sanitation practices"
+    ],
+    "management": [
+      "Inspect the tree for cankers and fruit symptoms",
+      "Follow local integrated orchard-disease guidance"
+    ],
+    "professional_help_message": "Request professional confirmation if cankers, fruit rot or rapid spread accompanies the leaf spots.",
+    "sources": [
+      {
+        "title": "Pome Fruit Disease - Black Rot and Frogeye Leaf Spot",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/pome-fruit-disease-black-rot-and-frogeye-leaf-spot"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "APPLE_MOSAIC",
+    "class_name": "Apple Mosaic",
+    "condition_type": "viral",
+    "overview": "Apple mosaic is a virus-associated condition that can produce chlorotic mosaic patterns on apple leaves.",
+    "symptoms": [
+      "Cream, yellow or pale-green mosaic patterns",
+      "Irregular chlorotic bands, rings or patches on leaves"
+    ],
+    "possible_causes": [
+      "Apple mosaic virus or another virus associated with mosaic symptoms"
+    ],
+    "favorable_conditions": [
+      "Symptoms may vary with cultivar",
+      "Symptoms may vary with virus strain",
+      "Seasonal conditions can affect symptom expression"
+    ],
+    "spread": [
+      "Propagation or grafting with infected plant material is an important route"
+    ],
+    "prevention": [
+      "Use certified virus-tested planting and propagation material",
+      "Do not graft from symptomatic trees",
+      "Maintain clean propagation practices"
+    ],
+    "management": [
+      "Seek laboratory or extension confirmation",
+      "Separate suspect propagation material",
+      "Follow local sanitation guidance"
+    ],
+    "professional_help_message": "Consult a plant-health professional before using a suspect tree for propagation.",
+    "sources": [
+      {
+        "title": "Apple Mosaic Virus in Pome Fruits",
+        "organization": "American Phytopathological Society",
+        "url": "https://apsjournals.apsnet.org/doi/10.1094/9780890545010.006"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "POWDERY_MILDEW",
+    "class_name": "Apple Powdery Mildew",
+    "condition_type": "fungal",
+    "overview": "Apple powdery mildew affects young leaves, shoots, blossoms and sometimes fruit.",
+    "symptoms": [
+      "White powdery growth on leaves or shoots",
+      "Curled, narrow or stunted young leaves",
+      "Stunted young shoots"
+    ],
+    "possible_causes": [
+      "Podosphaera leucotricha"
+    ],
+    "favorable_conditions": [
+      "Mild temperatures",
+      "Humid conditions",
+      "Susceptible young growth"
+    ],
+    "spread": [
+      "Airborne spores can infect developing green tissue"
+    ],
+    "prevention": [
+      "Use resistant cultivars when suitable",
+      "Prune heavily infected shoots where locally recommended",
+      "Maintain balanced growth",
+      "Maintain good canopy airflow"
+    ],
+    "management": [
+      "Begin management based on local growth-stage and disease guidance",
+      "Use only locally registered products",
+      "Rotate fungicide modes of action when advised"
+    ],
+    "professional_help_message": "Seek orchard advice when young shoots or blossoms are extensively affected.",
+    "sources": [
+      {
+        "title": "Apple Disease - Powdery Mildew",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/apple-disease-powdery-mildew"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "APPLE_RUST",
+    "class_name": "Apple Rust",
+    "condition_type": "fungal",
+    "overview": "Apple rust diseases commonly involve Gymnosporangium fungi and alternate between apple and a juniper-family host.",
+    "symptoms": [
+      "Yellow-orange spots on upper leaf surfaces",
+      "Raised structures may develop on the underside of affected leaves"
+    ],
+    "possible_causes": [
+      "Gymnosporangium species, depending on region and symptoms"
+    ],
+    "favorable_conditions": [
+      "Wet spring weather during susceptible growth stages",
+      "Nearby susceptible juniper or cedar hosts"
+    ],
+    "spread": [
+      "Windborne spores can move between alternate hosts"
+    ],
+    "prevention": [
+      "Use resistant apple cultivars when appropriate",
+      "Discuss management of nearby alternate hosts with a local specialist"
+    ],
+    "management": [
+      "Confirm the rust type locally",
+      "Follow regional orchard recommendations",
+      "Use products only according to local labels"
+    ],
+    "professional_help_message": "Seek local identification because rust species and management needs can differ by region.",
+    "sources": [
+      {
+        "title": "Apple leaf spots diagnostic guide",
+        "organization": "University of Minnesota Extension",
+        "url": "https://apps.extension.umn.edu/garden/diagnose/plant/fruit/apple/leavesspots.html"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "APPLE_SCAB",
+    "class_name": "Apple Scab",
+    "condition_type": "fungal",
+    "overview": "Apple scab is a major fungal disease of apple that can affect leaves and fruit.",
+    "symptoms": [
+      "Olive-green to brown leaf spots with irregular or feathered edges",
+      "Dark scabby fruit lesions",
+      "Premature leaf drop may occur"
+    ],
+    "possible_causes": [
+      "Venturia inaequalis"
+    ],
+    "favorable_conditions": [
+      "Cool to moderate wet periods",
+      "Prolonged leaf wetness",
+      "Infected fallen leaves that carry inoculum"
+    ],
+    "spread": [
+      "Spores are released from infected leaves and lesions during suitable wet conditions"
+    ],
+    "prevention": [
+      "Use resistant cultivars where suitable",
+      "Promote decomposition or removal of infected fallen leaves",
+      "Improve canopy airflow"
+    ],
+    "management": [
+      "Use local infection-risk and growth-stage guidance",
+      "Apply only locally registered products according to labels"
+    ],
+    "professional_help_message": "Consult an orchard specialist when disease appears early or affects fruit production.",
+    "sources": [
+      {
+        "title": "Apple scab of apples and crabapples",
+        "organization": "University of Minnesota Extension",
+        "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/yard-and-garden-problems/apple-scab"
+      }
+    ]
+  },
+  {
+    "crop": "apple",
+    "class_code": "HEALTHY",
+    "class_name": "Healthy Apple Leaf",
+    "condition_type": "healthy",
+    "overview": "The image resembles healthy apple-leaf examples supported by the model, with no supported disease class strongly indicated.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine monitoring",
+      "Maintain balanced irrigation, nutrition and orchard sanitation",
+      "Re-scan if new spots, distortion or discoloration appear"
+    ],
+    "management": [
+      "No disease-specific treatment is suggested from this result"
+    ],
+    "professional_help_message": "Seek local advice if the tree shows symptoms that are not visible in the uploaded image.",
+    "sources": [
+      {
+        "title": "Apple pest and disease management",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/pest-management-in-apples-in-home-fruit-plantings"
+      }
+    ]
+  }
+]
+
