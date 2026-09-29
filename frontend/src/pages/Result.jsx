@@ -125,6 +125,10 @@ export default function Result() {
     .toUpperCase()
     .replace(/[\s-]+/g, "_");
 
+  const reliabilityStatus =
+    prediction?.reliability_status ||
+    (decision === "ACCEPT" ? "SUPPORTED" : "UNCERTAIN");
+
   /*
    * =========================================================
    * CLASS / DISEASE NAME
@@ -429,8 +433,20 @@ export default function Result() {
                   </h2>
 
                   <p className="mt-2 max-w-2xl text-sm leading-6 text-orange-800">
-                    We couldn't identify the condition clearly. Please retake the photo.
+                    {predictionMessage || "The image did not meet the model's reliability checks, so we have not issued a diagnosis."} Please try a clear, close-up photo of a supported crop leaf.
                   </p>
+
+                  <div className="mt-5 rounded-2xl border border-orange-200 bg-white/70 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-orange-700">
+                      Reliability check
+                    </p>
+                    <p className="mt-1 font-semibold text-orange-950">
+                      Diagnosis withheld
+                    </p>
+                    <p className="mt-1 text-sm leading-6 text-orange-800">
+                      AgriPredict can return an uncertain result instead of forcing a disease label when the image is outside its reliable prediction range.
+                    </p>
+                  </div>
 
                 </div>
 
@@ -513,6 +529,18 @@ export default function Result() {
                       {predictionMessage}
                     </p>
                   )}
+
+                  <div className="mt-5 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                      Reliability check
+                    </p>
+                    <p className="mt-1 font-semibold text-emerald-950">
+                      {reliabilityStatus === "SUPPORTED" ? "Prediction passed reliability checks" : "Prediction reliability is uncertain"}
+                    </p>
+                    <p className="mt-1 text-sm leading-6 text-emerald-800">
+                      This result is limited to the supported crop and conditions represented by the current model.
+                    </p>
+                  </div>
 
                   {isHealthy ? (
                     <div className="mt-6 flex gap-3 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">

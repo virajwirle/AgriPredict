@@ -206,7 +206,6 @@ def build_user_prediction(
     Only user-relevant information is exposed.
 
     Technical/internal ML information such as:
-    - decision
     - class code
     - confidence
     - probability margin
@@ -218,8 +217,20 @@ def build_user_prediction(
     is intentionally excluded from this response.
     """
 
+    decision = str(
+        prediction.get("decision") or "UNKNOWN"
+    ).upper()
+
+    reliability_status = (
+        "SUPPORTED"
+        if decision == "ACCEPT"
+        else "UNCERTAIN"
+    )
+
     return {
         "crop": crop,
+        "decision": decision,
+        "reliability_status": reliability_status,
         "class_name": prediction.get(
             "predicted_class"
         ),
