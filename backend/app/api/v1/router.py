@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from app.api.v1.assistant import router as assistant_router
 
 from app.api.v1.auth import (
     router as auth_router,
@@ -39,3 +40,4 @@ api_v1_router.include_router(
 api_v1_router.include_router(
     weather_router
 )
+api_v1_router.include_router(assistant_router)

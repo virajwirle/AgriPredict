@@ -38,6 +38,8 @@ class Settings(BaseSettings):
 
     model_preload: bool = False
 
+    minimum_image_blur_score: float = 10.0
+
     plant_validator_enabled: bool = False
 
     crop_validator_enabled: bool = False

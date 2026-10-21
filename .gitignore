@@ -30,6 +30,15 @@ env/
 .DS_Store
 Thumbs.db
 
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Large local RAG retrieval assets (keep available locally, exclude from Git)
+backend/llm_data/rag/expanded/*.index
+backend/llm_data/rag/expanded/*.jsonl
+
 # Temporary files
 *.tmp
 *.log

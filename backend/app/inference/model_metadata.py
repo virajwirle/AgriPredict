@@ -68,6 +68,12 @@ class ModelMetadata(BaseModel):
         min_length=1
     )
 
+    predictor_class: str | None = None
+
+    predictor_function: str | None = None
+
+    ood_rejection_enabled: bool = True
+
     source: HuggingFaceSource
 
     enabled: bool = True

@@ -1,0 +1,106 @@
+[
+  {
+    "crop": "tea",
+    "class_code": "HEALTHY_LEAF",
+    "class_name": "healthy leaf",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Tea mosquito bug: Helopeltis theivora",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/tea/tea_1.html"
+      }
+    ]
+  },
+  {
+    "crop": "tea",
+    "class_code": "BLIGHT",
+    "class_name": "tea leaf blight-like symptoms",
+    "condition_type": "unknown",
+    "overview": "The model has a broad “Blight” class and does not identify a particular tea blight pathogen. Tea has multiple named blight conditions, so local diagnosis is needed.",
+    "symptoms": [
+      "The class indicates a blight-like leaf appearance but not its cause"
+    ],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Do not choose a disease-specific treatment from this broad label alone"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Tea crop diseases",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/tea_diseases_2.html"
+      }
+    ]
+  },
+  {
+    "crop": "tea",
+    "class_code": "HELOPELTIS",
+    "class_name": "Helopeltis tea mosquito bug",
+    "condition_type": "pest",
+    "overview": "Tea mosquito bug adults and nymphs feed on buds, young leaves, and tender stems. Feeding punctures may appear reddish-brown and leaves may curl.",
+    "symptoms": [
+      "Reddish-brown feeding punctures",
+      "Leaves may curl or deform; shoots may dry"
+    ],
+    "possible_causes": [
+      "Sap feeding by Helopeltis theivora"
+    ],
+    "favorable_conditions": [
+      "TNAU reports greater damage in more shaded areas"
+    ],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Confirm the insect before management",
+      "Use locally approved integrated pest-management guidance; do not choose pesticide from the image alone"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Tea mosquito bug: Helopeltis theivora",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/tea/tea_1.html"
+      }
+    ]
+  },
+  {
+    "crop": "tea",
+    "class_code": "RED_RUST",
+    "class_name": "tea red rust",
+    "condition_type": "unknown",
+    "overview": "TNAU lists tea red rust as associated with Cephaleuros parasiticus; this model label alone does not verify the organism.",
+    "symptoms": [],
+    "possible_causes": [
+      "Cephaleuros parasiticus is listed by TNAU as associated with tea red rust"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Seek local confirmation because rust-like symptoms can have other causes"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Tea crop disease list",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/crop_pdf/tea.pdf"
+      }
+    ]
+  }
+]

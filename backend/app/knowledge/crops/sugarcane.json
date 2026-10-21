@@ -1,0 +1,139 @@
+[
+  {
+    "crop": "sugarcane",
+    "class_code": "HEALTHY",
+    "class_name": "healthy",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Sugarcane red rot",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/expert_system/sugar/faq.html"
+      }
+    ]
+  },
+  {
+    "crop": "sugarcane",
+    "class_code": "MOSAIC",
+    "class_name": "sugarcane mosaic",
+    "condition_type": "viral",
+    "overview": "Sugarcane mosaic is a viral disease; the model label does not identify the virus strain or confirm the cause.",
+    "symptoms": [
+      "Mosaic-like leaf pattern may be present"
+    ],
+    "possible_causes": [
+      "Sugarcane mosaic viruses can cause mosaic disease"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Use clean planting material and seek local confirmation before disease-specific action"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Disease Management of Agricultural Crops: sugarcane mosaic",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://www.agritech.tnau.ac.in/org_farm/orgfarm_agridiseases.html"
+      }
+    ]
+  },
+  {
+    "crop": "sugarcane",
+    "class_code": "REDROT",
+    "class_name": "sugarcane red rot",
+    "condition_type": "fungal",
+    "overview": "Sugarcane red rot is a fungal disease. TNAU describes internal red discoloration in split canes, sometimes interrupted by white patches; leaf yellowing and drying may also occur.",
+    "symptoms": [
+      "Leaves may yellow and dry",
+      "Split cane may show internal red discoloration with white patches"
+    ],
+    "possible_causes": [
+      "Colletotrichum falcatum is a commonly used name for the pathogen"
+    ],
+    "favorable_conditions": [],
+    "spread": [
+      "Infected setts and crop residues can contribute to spread"
+    ],
+    "prevention": [
+      "Use disease-free planting material and follow local sanitation guidance"
+    ],
+    "management": [
+      "Have cane inspected and confirmed locally before taking crop-specific action"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Sugarcane red rot",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/expert_system/sugar/faq.html"
+      }
+    ]
+  },
+  {
+    "crop": "sugarcane",
+    "class_code": "RUST",
+    "class_name": "sugarcane rust",
+    "condition_type": "fungal",
+    "overview": "Sugarcane rust affects leaves. TNAU describes small elongated yellow spots that may become brown or reddish-brown, with pustules often beneath leaves.",
+    "symptoms": [
+      "Small elongated yellowish leaf spots",
+      "Spots may become brown or reddish-brown",
+      "Pustules may appear on the lower leaf surface"
+    ],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Confirm locally and follow regional variety and disease-management advice"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Sugarcane crop protection",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/expert_system/sugar/cropprotection.html"
+      }
+    ]
+  },
+  {
+    "crop": "sugarcane",
+    "class_code": "YELLOW",
+    "class_name": "sugarcane yellowing class",
+    "condition_type": "unknown",
+    "overview": "“Yellow” is a broad model class and does not establish sugarcane yellow leaf disease. Yellowing has multiple causes; field observations and local diagnosis are needed.",
+    "symptoms": [
+      "Yellowing or discoloration is suggested by the model label"
+    ],
+    "possible_causes": [
+      "Disease, pest, water, or nutrient conditions may produce yellowing"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Check the whole plant and crop stage",
+      "Request local diagnosis before changing fertilizer or pesticide use"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Sugarcane Yellow Leaf disease",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d1.html"
+      }
+    ]
+  }
+]

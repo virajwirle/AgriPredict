@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1180" viewBox="0 0 1700 1180">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#46665b"/></marker>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#18352b}.subtitle{font:400 18px Arial,sans-serif;fill:#52665d}
+    .head{font:700 19px Arial,sans-serif;fill:#173c30}.body{font:400 16px Arial,sans-serif;fill:#213b32}.small{font:400 14px Arial,sans-serif;fill:#425d53}
+    .box{fill:#f5faf6;stroke:#46745e;stroke-width:2.5;rx:18}.model{fill:#e7f2e9;stroke:#34704d;stroke-width:3;rx:18}
+    .data{fill:#edf3fb;stroke:#5278a0;stroke-width:2.5;rx:18}.decision{fill:#fff5df;stroke:#b4832f;stroke-width:2.5;rx:18}
+    .line{stroke:#46665b;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#7d9187;stroke-width:2.3;fill:none;stroke-dasharray:9 7;marker-end:url(#arrow)}
+    .panel{fill:#fbfcfb;stroke:#b9c9bf;stroke-width:2;rx:20}.pill{fill:#dcebe0;stroke:#8eaf98;stroke-width:1.5;rx:14}
+  </style>
+</defs>
+<rect width="1700" height="1180" fill="#ffffff"/>
+<text x="70" y="64" class="title">AgriPredict Shared Crop-Specific Model Architecture</text>
+<text x="70" y="96" class="subtitle">Common ResNet50–Transformer pipeline; each crop has its own trained weights and crop-specific output classes</text>
+
+<!-- inference model -->
+<rect x="48" y="125" width="1604" height="500" class="panel"/>
+<text x="75" y="164" class="head">A. Image inference path</text>
+
+<rect x="75" y="220" width="180" height="172" class="data"/>
+<text x="165" y="253" text-anchor="middle" class="head">Leaf image</text>
+<text x="165" y="285" text-anchor="middle" class="body">RGB input</text>
+<text x="165" y="313" text-anchor="middle" class="body">224 × 224 × 3</text>
+<text x="165" y="353" text-anchor="middle" class="small">One selected crop</text>
+
+<rect x="290" y="220" width="205" height="172" class="box"/>
+<text x="392" y="253" text-anchor="middle" class="head">Preprocessing</text>
+<text x="392" y="286" text-anchor="middle" class="body">Resize / crop</text>
+<text x="392" y="315" text-anchor="middle" class="body">ImageNet normalize</text>
+<text x="392" y="354" text-anchor="middle" class="small">Augmentation in training only</text>
+
+<rect x="530" y="205" width="245" height="202" class="model"/>
+<text x="652" y="241" text-anchor="middle" class="head">ResNet50 backbone</text>
+<text x="652" y="278" text-anchor="middle" class="body">ImageNet pretrained</text>
+<text x="652" y="309" text-anchor="middle" class="body">Convolutional layers</text>
+<text x="652" y="340" text-anchor="middle" class="body">through layer4</text>
+<text x="652" y="378" text-anchor="middle" class="small">Average pool and FC removed</text>
+
+<rect x="810" y="220" width="190" height="172" class="box"/>
+<text x="905" y="253" text-anchor="middle" class="head">Feature map</text>
+<text x="905" y="293" text-anchor="middle" class="body">B × 2048 × 7 × 7</text>
+<text x="905" y="333" text-anchor="middle" class="small">Spatial CNN features</text>
+
+<rect x="1035" y="205" width="255" height="202" class="model"/>
+<text x="1162" y="241" text-anchor="middle" class="head">1 × 1 projection</text>
+<text x="1162" y="279" text-anchor="middle" class="body">2048 channels → 512</text>
+<text x="1162" y="315" text-anchor="middle" class="body">Flatten 7 × 7 positions</text>
+<text x="1162" y="349" text-anchor="middle" class="body">49 tokens × 512</text>
+<text x="1162" y="379" text-anchor="middle" class="small">Add learned positional embeddings</text>
+
+<rect x="1325" y="205" width="285" height="202" class="model"/>
+<text x="1467" y="241" text-anchor="middle" class="head">Transformer encoder</text>
+<text x="1467" y="279" text-anchor="middle" class="body">2 encoder layers</text>
+<text x="1467" y="310" text-anchor="middle" class="body">8-head self-attention</text>
+<text x="1467" y="341" text-anchor="middle" class="body">Feed-forward: 2048</text>
+<text x="1467" y="376" text-anchor="middle" class="small">GELU · dropout 0.2 · LayerNorm</text>
+
+<path d="M255 306 H282" class="line"/><path d="M495 306 H522" class="line"/><path d="M775 306 H802" class="line"/><path d="M1000 306 H1027" class="line"/><path d="M1290 306 H1317" class="line"/>
+
+<rect x="530" y="452" width="245" height="116" class="box"/>
+<text x="652" y="485" text-anchor="middle" class="head">Mean token pooling</text>
+<text x="652" y="521" text-anchor="middle" class="body">49 × 512 → 512 vector</text>
+<text x="652" y="548" text-anchor="middle" class="small">No CLS token in this model</text>
+<rect x="810" y="452" width="230" height="116" class="box"/>
+<text x="925" y="485" text-anchor="middle" class="head">Classification head</text>
+<text x="925" y="521" text-anchor="middle" class="body">LayerNorm → dropout</text>
+<text x="925" y="548" text-anchor="middle" class="small">Linear: 512 → Kcrop</text>
+<rect x="1075" y="452" width="260" height="116" class="box"/>
+<text x="1205" y="485" text-anchor="middle" class="head">Class probabilities</text>
+<text x="1205" y="521" text-anchor="middle" class="body">Softmax(logits)</text>
+<text x="1205" y="548" text-anchor="middle" class="small">Top class and score</text>
+<rect x="1370" y="452" width="240" height="116" class="data"/>
+<text x="1490" y="485" text-anchor="middle" class="head">Crop-specific output</text>
+<text x="1490" y="521" text-anchor="middle" class="body">Kcrop disease classes</text>
+<text x="1490" y="548" text-anchor="middle" class="small">Separate weights per crop</text>
+<path d="M1467 407 V430 H652 V444" class="line"/><path d="M775 510 H802" class="line"/><path d="M1040 510 H1067" class="line"/><path d="M1335 510 H1362" class="line"/>
+
+<rect x="75" y="452" width="420" height="116" class="decision"/>
+<text x="285" y="484" text-anchor="middle" class="head">Optional reliability / OOD decision</text>
+<text x="285" y="518" text-anchor="middle" class="body">Applied after classification if configured</text>
+<text x="285" y="547" text-anchor="middle" class="small">Accept result or return uncertain / reject</text>
+<path d="M1370 510 H1348 V594 H285 V576" class="dash"/>
+<text x="800" y="602" text-anchor="middle" class="small">Weather and fertilizer modules are separate advisory components; they are not inputs to the leaf-image classifier.</text>
+
+<!-- training -->
+<rect x="48" y="650" width="1604" height="270" class="panel"/>
+<text x="75" y="690" class="head">B. Shared training and model selection procedure</text>
+<rect x="78" y="725" width="255" height="145" class="data"/>
+<text x="205" y="758" text-anchor="middle" class="head">Crop-specific dataset</text>
+<text x="205" y="792" text-anchor="middle" class="body">Train / validation / test</text>
+<text x="205" y="825" text-anchor="middle" class="small">Keep test data held out</text>
+<rect x="380" y="725" width="315" height="145" class="model"/>
+<text x="537" y="758" text-anchor="middle" class="head">Stage 1: train head</text>
+<text x="537" y="792" text-anchor="middle" class="body">Freeze ResNet50 backbone</text>
+<text x="537" y="825" text-anchor="middle" class="small">Train projection, Transformer, classifier</text>
+<rect x="742" y="725" width="315" height="145" class="model"/>
+<text x="899" y="758" text-anchor="middle" class="head">Stage 2: fine-tune</text>
+<text x="899" y="792" text-anchor="middle" class="body">Unfreeze ResNet50 layer4</text>
+<text x="899" y="825" text-anchor="middle" class="small">Differential learning rates</text>
+<rect x="1104" y="725" width="230" height="145" class="box"/>
+<text x="1219" y="758" text-anchor="middle" class="head">Select checkpoint</text>
+<text x="1219" y="792" text-anchor="middle" class="body">Validation macro-F1</text>
+<text x="1219" y="825" text-anchor="middle" class="small">Early stopping / scheduler</text>
+<rect x="1380" y="725" width="230" height="145" class="decision"/>
+<text x="1495" y="758" text-anchor="middle" class="head">Evaluate</text>
+<text x="1495" y="792" text-anchor="middle" class="body">Internal and external test</text>
+<text x="1495" y="825" text-anchor="middle" class="small">OOD separately where available</text>
+<path d="M333 797 H372" class="line"/><path d="M695 797 H734" class="line"/><path d="M1057 797 H1096" class="line"/><path d="M1334 797 H1372" class="line"/>
+
+<!-- crop models -->
+<rect x="48" y="945" width="1604" height="190" class="panel"/>
+<text x="75" y="984" class="head">C. Ten independently trained crop-specific models</text>
+<text x="75" y="1018" class="body">Shared architecture and workflow; model weights, class labels, and output dimension Kcrop are specific to each crop.</text>
+<g class="small">
+<rect x="76" y="1043" width="145" height="48" class="pill"/><text x="148" y="1074" text-anchor="middle" class="body">Apple</text>
+<rect x="233" y="1043" width="145" height="48" class="pill"/><text x="305" y="1074" text-anchor="middle" class="body">Maize</text>
+<rect x="390" y="1043" width="145" height="48" class="pill"/><text x="462" y="1074" text-anchor="middle" class="body">Grapes</text>
+<rect x="547" y="1043" width="145" height="48" class="pill"/><text x="619" y="1074" text-anchor="middle" class="body">Tea</text>
+<rect x="704" y="1043" width="145" height="48" class="pill"/><text x="776" y="1074" text-anchor="middle" class="body">Potato</text>
+<rect x="861" y="1043" width="145" height="48" class="pill"/><text x="933" y="1074" text-anchor="middle" class="body">Cotton</text>
+<rect x="1018" y="1043" width="145" height="48" class="pill"/><text x="1090" y="1074" text-anchor="middle" class="body">Sugarcane</text>
+<rect x="1175" y="1043" width="145" height="48" class="pill"/><text x="1247" y="1074" text-anchor="middle" class="body">Groundnut</text>
+<rect x="1332" y="1043" width="145" height="48" class="pill"/><text x="1404" y="1074" text-anchor="middle" class="body">Okra</text>
+<rect x="1489" y="1043" width="145" height="48" class="pill"/><text x="1561" y="1074" text-anchor="middle" class="body">Pumpkin</text>
+</g>
+</svg>

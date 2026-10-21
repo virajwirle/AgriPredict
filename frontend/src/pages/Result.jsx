@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   Leaf,
   RefreshCcw,
+  Sparkles,
   ShieldCheck,
   Stethoscope,
   Sprout,
@@ -532,13 +533,19 @@ export default function Result() {
 
                   <div className="mt-5 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
                     <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                      Reliability check
+                      Result status
                     </p>
                     <p className="mt-1 font-semibold text-emerald-950">
-                      {reliabilityStatus === "SUPPORTED" ? "Prediction passed reliability checks" : "Prediction reliability is uncertain"}
+                      {reliabilityStatus === "SUPPORTED"
+                        ? "Prediction passed reliability checks"
+                        : reliabilityStatus === "CLASSIFICATION_ONLY"
+                        ? "Classification-only result"
+                        : "Prediction reliability is uncertain"}
                     </p>
                     <p className="mt-1 text-sm leading-6 text-emerald-800">
-                      This result is limited to the supported crop and conditions represented by the current model.
+                      {reliabilityStatus === "CLASSIFICATION_ONLY"
+                        ? "The model returns the closest supported class without screening unfamiliar images. Confirm the crop and visible symptoms before acting on this result."
+                        : "This result is limited to the supported crop and conditions represented by the current model."}
                     </p>
                   </div>
 
@@ -798,6 +805,20 @@ export default function Result() {
 
               <button
                 type="button"
+                onClick={() =>
+                  navigate("/assistant", {
+                    state: {
+                      initialQuestion: `I received a ${cropName} disease detection result for ${className || "an uncertain condition"}. Explain what it means and suggest practical next steps.`,
+                    },
+                  })
+                }
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#285C38] to-[#4A8A55] px-5 py-3 text-sm font-semibold text-white shadow-md shadow-emerald-900/10 transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-emerald-200"
+              >
+                <Sparkles size={17} />
+                Ask AI about this result
+              </button>
+              <button
+                type="button"
                 onClick={handleRetake}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
               >
@@ -1045,3 +1066,4 @@ function capitalize(value) {
     value.slice(1)
   );
 }
+

@@ -15,6 +15,7 @@ import Settings from "./pages/Settings";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import AgricultureAssistant from "./pages/AgricultureAssistant";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -87,7 +88,11 @@ function App() {
             path="/scan"
             element={<Scan />}
           />
-
+          {/*Ai Assisten Route */}
+          <Route
+           path="/assistant"
+           element={<AgricultureAssistant />}
+          />
 
           {/* Prediction Result */}
 

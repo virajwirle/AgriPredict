@@ -1,0 +1,144 @@
+[
+  {
+    "crop": "cotton",
+    "class_code": "HEALTHY_LEAF",
+    "class_name": "healthy leaf",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Cotton Bacterial blight",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/cotton_diseases/cotton_d9.html"
+      }
+    ]
+  },
+  {
+    "crop": "cotton",
+    "class_code": "BACTERIAL_BLIGHT",
+    "class_name": "cotton bacterial blight",
+    "condition_type": "bacterial",
+    "overview": "Cotton bacterial blight is associated with Xanthomonas and can affect leaves, veins, stems, and other plant parts.",
+    "symptoms": [
+      "Water-soaked angular spots may become dark or reddish-brown",
+      "Vein darkening and leaf blighting can occur"
+    ],
+    "possible_causes": [
+      "Xanthomonas associated with cotton bacterial blight"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Confirm locally and follow regional cotton guidance",
+      "Do not select treatment from the image label alone"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Cotton Bacterial blight",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/cotton_diseases/cotton_d9.html"
+      }
+    ]
+  },
+  {
+    "crop": "cotton",
+    "class_code": "CURL_VIRUS",
+    "class_name": "cotton leaf curl virus-like symptoms",
+    "condition_type": "viral",
+    "overview": "Cotton leaf curl disease is associated with a begomovirus complex and is transmitted by whiteflies; visual confirmation is needed.",
+    "symptoms": [
+      "Leaf curling and thickened veins may occur",
+      "Severe cases may show stunting"
+    ],
+    "possible_causes": [
+      "Cotton leaf curl virus complex"
+    ],
+    "favorable_conditions": [],
+    "spread": [
+      "Whiteflies transmit the disease"
+    ],
+    "prevention": [
+      "Use locally recommended tolerant cultivars and disease-free planting material"
+    ],
+    "management": [
+      "Ask local plant-health authorities to confirm and advise on regional management"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Integrated Pest Management Package for Cotton",
+        "organization": "National Institute of Plant Health Management, Government of India",
+        "url": "https://niphm.gov.in/IPMPackages/Cotton.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "cotton",
+    "class_code": "LEAF_HOPPER_JASSIDS",
+    "class_name": "cotton leaf hopper jassids",
+    "condition_type": "pest",
+    "overview": "Cotton jassids feed on sap. TNAU reports pale-yellow leaves, inward curling under heavy infestation, and pinkish-brown leaf edges.",
+    "symptoms": [
+      "Pale-yellow leaves",
+      "Inward curling when infestation is heavy",
+      "Pinkish-brown leaf edges may occur"
+    ],
+    "possible_causes": [
+      "Sap feeding by cotton leafhoppers (jassids)"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Check leaf undersides and confirm the insect before intervention",
+      "Use locally approved integrated pest-management guidance"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Cotton leaf hopper (jassids)",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/pdf/6.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "cotton",
+    "class_code": "LEAF_REDDING",
+    "class_name": "cotton leaf reddening",
+    "condition_type": "unknown",
+    "overview": "Leaf reddening is a symptom category, not one diagnosis. ICAR describes biotic and abiotic factors, including nutrient or water stress and jassid injury.",
+    "symptoms": [
+      "Reddish or bronze leaf discoloration may occur"
+    ],
+    "possible_causes": [
+      "Multiple possible causes, including nutrient or water stress and pest injury"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Check crop stage, water, nutrition, and pests with a local agronomist",
+      "Do not assume nutrient deficiency from leaf color alone"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Red leaf symptoms in cotton: causes and management options",
+        "organization": "Indian Council of Agricultural Research",
+        "url": "https://epubs.icar.org.in/index.php/IndFarm/article/view/49106"
+      }
+    ]
+  }
+]

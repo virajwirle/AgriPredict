@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import {
+  Bot,
   ScanLine,
+  Sparkles,
   Sprout,
   AlertTriangle,
   X,
@@ -17,6 +19,7 @@ import WeatherCard from "../components/WeatherCard";
 import SprayingConditions from "../components/SprayingConditions";
 
 import { getPredictionHistory } from "../services/api";
+import { SUPPORTED_CROPS } from "../constants/crops";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -316,19 +319,27 @@ function Dashboard() {
 
 
             {/* =================================================
-                TOP SCAN BUTTON
+                AI ASSISTANT BUTTON
             ================================================= */}
 
             <button
               type="button"
-              onClick={handleStartScan}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#285C38] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#214D2F]"
+              onClick={() => navigate("/assistant")}
+              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-br from-[#214D32] via-[#2D6940] to-[#438451] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(40,92,56,0.24)] ring-1 ring-[#A9DD9B]/35 transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(40,92,56,0.34)] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#8EBE80]/40"
             >
+              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/[0.08] to-white/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-              <ScanLine size={17} />
+              <span className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#B9E6A8]/15 text-[#D8F5C7] ring-1 ring-[#D8F5C7]/25 transition duration-200 group-hover:scale-105 group-hover:bg-[#B9E6A8]/25">
+                <Bot size={21} strokeWidth={1.9} />
+                <Sparkles
+                  size={11}
+                  className="absolute -right-1 -top-1 fill-[#D8F5C7] text-[#D8F5C7]"
+                />
+              </span>
 
-              Scan Plant
-
+              <span className="relative whitespace-nowrap text-left">
+                Ask AI Assistant
+              </span>
             </button>
 
           </section>
@@ -494,30 +505,16 @@ function Dashboard() {
 
             <div className="grid gap-4 sm:grid-cols-2">
 
-              {/* =================================================
-                  APPLE
-              ================================================= */}
-
-              <CropCard
-                emoji="🍎"
-                crop="Apple"
-                description="Apple leaf disease detection"
-                selected={selectedCrop === "apple"}
-                onClick={() => handleCropSelect("apple")}
-              />
-
-
-              {/* =================================================
-                  MAIZE
-              ================================================= */}
-
-              <CropCard
-                emoji="🌽"
-                crop="Maize"
-                description="Maize leaf disease detection"
-                selected={selectedCrop === "maize"}
-                onClick={() => handleCropSelect("maize")}
-              />
+              {SUPPORTED_CROPS.map((crop) => (
+                <CropCard
+                  key={crop.id}
+                  emoji={crop.emoji}
+                  crop={crop.name}
+                  description={`${crop.name} leaf disease detection`}
+                  selected={selectedCrop === crop.id}
+                  onClick={() => handleCropSelect(crop.id)}
+                />
+              ))}
 
             </div>
 

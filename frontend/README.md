@@ -1,16 +1,21 @@
-# React + Vite
+# AgriPredict frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend is the React and Vite dashboard for AgriPredict. It provides crop disease scanning and results, prediction history, weather and advisory views, and the agriculture assistant.
 
-Currently, two official plugins are available:
+## Start the development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+From this directory, install dependencies once and start Vite:
 
-## React Compiler
+```powershell
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app expects the FastAPI backend to be running. For backend setup and the complete local workflow, see the [project README](../README.md).
 
-## Expanding the ESLint configuration
+## Available scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev` — start the local Vite server.
+- `npm run build` — create a production build.
+- `npm run lint` — run ESLint.
+- `npm run preview` — preview the production build locally.

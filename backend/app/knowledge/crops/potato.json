@@ -1,0 +1,156 @@
+[
+  {
+    "crop": "potato",
+    "class_code": "HEALTHY",
+    "class_name": "healthy",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      }
+    ]
+  },
+  {
+    "crop": "potato",
+    "class_code": "BACTERIA",
+    "class_name": "bacterial category",
+    "condition_type": "bacterial",
+    "overview": "This broad class is not a named potato disease or pathogen. Different bacterial problems affect different plant parts and require specific confirmation.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Do not choose treatment from this broad class",
+      "Ask local extension or a diagnostic laboratory to identify the specific problem"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      }
+    ]
+  },
+  {
+    "crop": "potato",
+    "class_code": "FUNGI",
+    "class_name": "fungal category",
+    "condition_type": "fungal",
+    "overview": "This class groups fungal-looking conditions and does not name a pathogen or disease.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Do not choose a fungicide from this broad class",
+      "Seek local diagnosis of the affected plant part and symptoms"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      },
+      {
+        "title": "Potato tuber rots",
+        "organization": "Royal Horticultural Society",
+        "url": "https://www.rhs.org.uk/disease/potato-tuber-rots"
+      }
+    ]
+  },
+  {
+    "crop": "potato",
+    "class_code": "PEST",
+    "class_name": "pest category",
+    "condition_type": "pest",
+    "overview": "This broad class indicates a possible pest-related appearance but does not identify the species.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Inspect the plant to identify the pest before management",
+      "Use locally recommended integrated pest-management guidance"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      }
+    ]
+  },
+  {
+    "crop": "potato",
+    "class_code": "PHYTOPTHORA",
+    "class_name": "Phytopthora category",
+    "condition_type": "unknown",
+    "overview": "The uploaded model spells this class “Phytopthora.” It suggests a Phytophthora-like category but does not establish the species or disease. Potato late blight is caused by Phytophthora infestans, but this label alone does not confirm late blight.",
+    "symptoms": [],
+    "possible_causes": [
+      "Phytophthora includes potato pathogens; species-level confirmation is needed"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Seek local plant-health confirmation before disease-specific action"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      },
+      {
+        "title": "Potato tuber rots",
+        "organization": "Royal Horticultural Society",
+        "url": "https://www.rhs.org.uk/disease/potato-tuber-rots"
+      }
+    ]
+  },
+  {
+    "crop": "potato",
+    "class_code": "VIRUS",
+    "class_name": "virus category",
+    "condition_type": "viral",
+    "overview": "This broad class is not a named potato virus; virus symptoms can overlap with other crop problems.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Do not infer a specific virus from this broad label",
+      "Ask an extension specialist or diagnostic laboratory about confirmation"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Potato Pests and Diseases",
+        "organization": "International Potato Center",
+        "url": "https://cipotato.org/potato/potato-pests-diseases/"
+      }
+    ]
+  }
+]

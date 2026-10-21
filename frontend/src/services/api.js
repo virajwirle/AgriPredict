@@ -93,6 +93,22 @@ export async function loginUser({
   });
 }
 
+export async function chatWithAgricultureAssistant({
+  question,
+  history = [],
+}) {
+  return apiRequest("/assistant/chat", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      question,
+      history,
+    }),
+  });
+}
+
 /* =========================================================
    DISEASE PREDICTION
 ========================================================= */

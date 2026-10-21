@@ -1,0 +1,148 @@
+[
+  {
+    "crop": "grapes",
+    "class_code": "HEALTHY",
+    "class_name": "healthy",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Grape Disease - Downy Mildew",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/grape-disease-downy-mildew"
+      }
+    ]
+  },
+  {
+    "crop": "grapes",
+    "class_code": "DOWNY_MILDEW",
+    "class_name": "downy mildew",
+    "condition_type": "fungal",
+    "overview": "Grape downy mildew is caused by Plasmopara viticola, an oomycete rather than a true fungus. Yellowish, sometimes oily angular lesions and white growth on the leaf underside are described by Penn State Extension. Warm, wet conditions favor infection.",
+    "symptoms": [
+      "Angular yellowish or oily-looking leaf lesions",
+      "White cottony growth may appear underneath leaves"
+    ],
+    "possible_causes": [
+      "Plasmopara viticola, an oomycete"
+    ],
+    "favorable_conditions": [
+      "Warm, wet conditions and prolonged leaf wetness"
+    ],
+    "spread": [
+      "Rain and wet periods support infection and repeated disease cycles"
+    ],
+    "prevention": [
+      "Improve canopy airflow and leaf drying where appropriate",
+      "Manage infected leaf debris using regional guidance"
+    ],
+    "management": [
+      "Confirm before applying treatment",
+      "Use only locally registered products according to their label and extension advice"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Grape Disease - Downy Mildew",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/grape-disease-downy-mildew"
+      }
+    ]
+  },
+  {
+    "crop": "grapes",
+    "class_code": "POWDERY_MILDEW",
+    "class_name": "powdery mildew",
+    "condition_type": "fungal",
+    "overview": "Powdery mildew can affect green grapevine tissues and appear as whitish-gray powder on leaves and shoots.",
+    "symptoms": [
+      "Whitish-gray dusty growth on upper or lower leaf surfaces",
+      "Leaves and shoots may be affected"
+    ],
+    "possible_causes": [
+      "Powdery mildew fungi; species depend on host and region"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Maintain an open canopy using locally appropriate pruning and shoot positioning"
+    ],
+    "management": [
+      "Confirm the disease and consult local grape guidance before treatment",
+      "Follow product labels and regional registration requirements"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Backyard Grape Growing",
+        "organization": "Penn State Extension",
+        "url": "https://extension.psu.edu/backyard-grape-growing"
+      }
+    ]
+  },
+  {
+    "crop": "grapes",
+    "class_code": "ESCA_COMPLEX",
+    "class_name": "Esca complex",
+    "condition_type": "fungal",
+    "overview": "Esca is associated with a complex of wood-infecting fungi; leaf symptoms can include interveinal striping and vary between seasons.",
+    "symptoms": [
+      "Interveinal striping that can dry or become necrotic"
+    ],
+    "possible_causes": [
+      "A complex of wood-infecting fungi"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Have affected vines assessed by a viticulture or plant-health specialist",
+      "Do not infer vine-wide disease from one leaf image"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Esca (Black Measles) - Grape Pest Management Guidelines",
+        "organization": "UC Statewide IPM Program",
+        "url": "https://ipm.ucanr.edu/agriculture/grape/esca-black-measles/"
+      }
+    ]
+  },
+  {
+    "crop": "grapes",
+    "class_code": "ERINEUM_MITE",
+    "class_name": "grape erineum mite",
+    "condition_type": "pest",
+    "overview": "Grape erineum mites can cause blister-like swellings on upper leaf surfaces and felty patches beneath them.",
+    "symptoms": [
+      "Warty or blister-like swellings above",
+      "Felty patches underneath leaves"
+    ],
+    "possible_causes": [
+      "Feeding by Colomerus vitis mites"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "UC IPM notes control may not be warranted when feeding does not affect yield; ask local experts if damage is extensive"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Grape Erineum Mite",
+        "organization": "UC Statewide IPM Program",
+        "url": "https://ipm.ucanr.edu/home-and-landscape/grape-erineum-mite/"
+      }
+    ]
+  }
+]

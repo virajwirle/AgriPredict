@@ -15,6 +15,9 @@ from app.inference.adapters.base import (
 from app.inference.adapters.maize_v1 import (
     MaizeV1Adapter
 )
+from app.inference.adapters.crop_package_v1 import (
+    CropPackageV1Adapter
+)
 
 from app.inference.model_metadata import (
     ModelMetadata
@@ -43,7 +46,13 @@ ADAPTER_CLASSES: dict[
         AppleV1Adapter,
 
     "maize_v1":
-        MaizeV1Adapter
+        MaizeV1Adapter,
+
+    "crop_package_v1":
+        CropPackageV1Adapter,
+
+    "crop_function_v1":
+        CropPackageV1Adapter,
 }
 
 

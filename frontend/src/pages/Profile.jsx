@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
+import { SUPPORTED_CROPS } from "../constants/crops";
 
 export default function Profile() {
   const navigate = useNavigate();
@@ -606,13 +607,11 @@ export default function Profile() {
               className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 sm:max-w-md"
             >
 
-              <option value="apple">
-                🍎 Apple
-              </option>
-
-              <option value="maize">
-                🌽 Maize
-              </option>
+              {SUPPORTED_CROPS.map((crop) => (
+                <option key={crop.id} value={crop.id}>
+                  {crop.emoji} {crop.name}
+                </option>
+              ))}
 
             </select>
 

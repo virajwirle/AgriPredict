@@ -1,4 +1,5 @@
 import {
+  Bot,
   CloudSun,
   History,
   Leaf,
@@ -49,7 +50,11 @@ function Sidebar({ mobileMenuOpen, setMobileMenuOpen }) {
             active
           />
 
-          
+          <NavItem
+            icon={<ScanLine size={19} />}
+            label="Scan"
+            onClick={() => goTo("/scan")}
+          />
 
           <NavItem
             icon={<History size={19} />}

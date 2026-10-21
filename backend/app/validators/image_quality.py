@@ -13,6 +13,8 @@ from PIL import (
     UnidentifiedImageError
 )
 
+from app.core.config import settings
+
 
 # ============================================================
 # IMAGE-QUALITY RESULT
@@ -54,7 +56,7 @@ class ImageQualityValidator:
         self,
         minimum_width: int = 224,
         minimum_height: int = 224,
-        minimum_blur_score: float = 50.0,
+        minimum_blur_score: float | None = None,
         minimum_brightness: float = 20.0,
         maximum_brightness: float = 240.0
     ):
@@ -68,7 +70,9 @@ class ImageQualityValidator:
         )
 
         self.minimum_blur_score = (
-            minimum_blur_score
+            settings.minimum_image_blur_score
+            if minimum_blur_score is None
+            else minimum_blur_score
         )
 
         self.minimum_brightness = (

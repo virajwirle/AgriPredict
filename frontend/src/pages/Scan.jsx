@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { predictDisease } from "../services/api";
+import { getCropEmoji, getCropName } from "../constants/crops";
 
 export default function Scan() {
   const navigate = useNavigate();
@@ -31,19 +32,8 @@ export default function Scan() {
   const [isAnalyzing, setIsAnalyzing] =
     useState(false);
 
-  const cropDisplayName =
-    selectedCrop === "apple"
-      ? "Apple"
-      : selectedCrop === "maize"
-      ? "Maize"
-      : "";
-
-  const cropEmoji =
-    selectedCrop === "apple"
-      ? "🍎"
-      : selectedCrop === "maize"
-      ? "🌽"
-      : "🌿";
+  const cropDisplayName = getCropName(selectedCrop);
+  const cropEmoji = getCropEmoji(selectedCrop);
 
   function handleFileChange(event) {
     const file = event.target.files?.[0];

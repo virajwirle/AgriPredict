@@ -1,0 +1,150 @@
+[
+  {
+    "crop": "okra",
+    "class_code": "HEALTHY_LEAF",
+    "class_name": "healthy leaf",
+    "condition_type": "healthy",
+    "overview": "The model classified the submitted leaf as healthy-looking within its supported classes. A single image cannot rule out every disease or pest.",
+    "symptoms": [],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Continue routine crop scouting and local crop-management practices."
+    ],
+    "management": [],
+    "professional_help_message": "Seek local advice if symptoms appear or progress after this image was taken.",
+    "sources": [
+      {
+        "title": "Vein-Clearing / Yellow Vein Mosaic of Bhendi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/bhendi_diseases_4.html"
+      }
+    ]
+  },
+  {
+    "crop": "okra",
+    "class_code": "INSECTS_EATEN_LEAF",
+    "class_name": "insect feeding damage",
+    "condition_type": "pest",
+    "overview": "This class indicates possible insect feeding damage but does not identify the insect.",
+    "symptoms": [
+      "Leaf tissue appears eaten or missing"
+    ],
+    "possible_causes": [],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Inspect the plant and leaf undersides to identify the pest",
+      "Use locally recommended integrated pest-management guidance"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "IPM Package for Okra / Bhindi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/crop_pdf/okra.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "okra",
+    "class_code": "LEAF_CURL",
+    "class_name": "okra leaf curl-like symptoms",
+    "condition_type": "unknown",
+    "overview": "Leaf curl is a visible symptom, not a unique diagnosis. Viruses, insects, and other stresses can produce curling in okra.",
+    "symptoms": [
+      "Leaf curling is suggested by the model class"
+    ],
+    "possible_causes": [
+      "Several biotic and abiotic causes are possible"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [],
+    "management": [
+      "Check for vectors and inspect nearby plants",
+      "Seek local diagnosis before treatment"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Vein-Clearing / Yellow Vein Mosaic of Bhendi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/bhendi_diseases_4.html"
+      },
+      {
+        "title": "IPM Package for Okra / Bhindi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/crop_pdf/okra.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "okra",
+    "class_code": "LEAF_SPOT",
+    "class_name": "okra leaf spot",
+    "condition_type": "unknown",
+    "overview": "This is a broad leaf-spot class. TNAU lists multiple possible organisms associated with okra leaf spots, so the class does not establish the pathogen.",
+    "symptoms": [
+      "Spots or discolored lesions may be present"
+    ],
+    "possible_causes": [
+      "More than one pathogen can cause okra leaf spots"
+    ],
+    "favorable_conditions": [],
+    "spread": [],
+    "prevention": [
+      "Follow local sanitation guidance for affected plant material"
+    ],
+    "management": [
+      "Confirm the cause before selecting disease-specific treatment"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Disease management in bhendi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/org_farm/orgfarm_bhendi_diseases.html"
+      },
+      {
+        "title": "IPM Package for Okra / Bhindi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/crop_pdf/okra.pdf"
+      }
+    ]
+  },
+  {
+    "crop": "okra",
+    "class_code": "YELLOW_VEIN_MOSAIC_VIRUS",
+    "class_name": "okra yellow vein mosaic virus",
+    "condition_type": "viral",
+    "overview": "Yellow vein mosaic is an okra viral disease transmitted by whiteflies. TNAU describes yellowing of veins and veinlets, with stunting possible in severe infections.",
+    "symptoms": [
+      "Yellowing of veins and veinlets",
+      "Severe infection may cause smaller leaves and stunted plants"
+    ],
+    "possible_causes": [
+      "Yellow vein mosaic virus"
+    ],
+    "favorable_conditions": [],
+    "spread": [
+      "Whiteflies transmit the virus"
+    ],
+    "prevention": [
+      "Use locally recommended tolerant cultivars and scout for symptoms and whiteflies"
+    ],
+    "management": [
+      "Seek local confirmation and follow regional virus and vector-management guidance"
+    ],
+    "professional_help_message": "This image classification is not a field diagnosis. Ask a local agricultural extension service or plant diagnostic laboratory to confirm the cause before choosing treatment.",
+    "sources": [
+      {
+        "title": "Vein-Clearing / Yellow Vein Mosaic of Bhendi",
+        "organization": "Tamil Nadu Agricultural University Agritech Portal",
+        "url": "https://agritech.tnau.ac.in/crop_protection/bhendi_diseases_4.html"
+      }
+    ]
+  }
+]

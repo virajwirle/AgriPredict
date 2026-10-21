@@ -221,8 +221,14 @@ def build_user_prediction(
         prediction.get("decision") or "UNKNOWN"
     ).upper()
 
+    reason_codes = list(
+        prediction.get("reason_codes") or []
+    )
+
     reliability_status = (
-        "SUPPORTED"
+        "CLASSIFICATION_ONLY"
+        if "OOD_REJECTION_NOT_CONFIGURED" in reason_codes
+        else "SUPPORTED"
         if decision == "ACCEPT"
         else "UNCERTAIN"
     )
@@ -231,6 +237,7 @@ def build_user_prediction(
         "crop": crop,
         "decision": decision,
         "reliability_status": reliability_status,
+        "reason_codes": reason_codes,
         "class_name": prediction.get(
             "predicted_class"
         ),
